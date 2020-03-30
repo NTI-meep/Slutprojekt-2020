@@ -9,6 +9,8 @@ namespace Slutprojekt_2020
     class Antagonist
     {
         int hp;
-
+        int attackpower;
+        int defense;
+        Random generator = new Random();
     }
 }

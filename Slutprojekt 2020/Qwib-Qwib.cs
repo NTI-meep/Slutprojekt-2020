@@ -8,6 +8,6 @@ namespace Slutprojekt_2020
 {
     class Qwib_Qwib:Antagonist
     {
-
+        
     }
 }
