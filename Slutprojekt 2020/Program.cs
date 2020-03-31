@@ -44,10 +44,49 @@ namespace Slutprojekt_2020
                     selected = 0;
                 }
 
+            }
+
+            Console.WriteLine("Good job you clicked a button");
+
+            Console.WriteLine("I will now display your stats - you will no be able to ");
 
 
+            string[] items2 = { "Fight", "Rest", "Fight the boss" };
+            int selected2 = 0;
+            while (true)
+            {
+
+                for (int i = 0; i < items2.Length; i++)
+                {
+                    if (i == selected2) Console.Write(">");
+                    else Console.Write(" ");
+                    Console.WriteLine(items2[i]);
+                }
+
+
+                ConsoleKeyInfo key = Console.ReadKey();
+                if (key.Key == ConsoleKey.UpArrow) selected--;
+                if (key.Key == ConsoleKey.DownArrow) selected++;
+                if (key.Key == ConsoleKey.Enter) break;
+
+                Console.Clear();
+                if (selected2 > items2.Length - 1)
+                {
+                    selected2 = items2.Length - 1;
+                }
+
+                if (selected < 0)
+                {
+                    selected = 0;
+                }
 
             }
+
+
+
+
+            Console.ReadLine();
         }
+
     }
 }

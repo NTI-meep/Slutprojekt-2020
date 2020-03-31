@@ -12,5 +12,16 @@ namespace Slutprojekt_2020
         int attackpower;
         int defense;
         Random generator = new Random();
+
+
+
+
+        public string print()
+        {
+            Console.WriteLine("");
+
+
+
+        }
     }
 }

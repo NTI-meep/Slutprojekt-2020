@@ -12,5 +12,11 @@ namespace Slutprojekt_2020
         int attackpower;
         int defense;
         Random generator = new Random();
+
+
+
+
+
+        
     }
 }
