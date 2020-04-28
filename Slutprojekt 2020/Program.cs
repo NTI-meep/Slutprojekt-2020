@@ -11,45 +11,12 @@ namespace Slutprojekt_2020
         static void Main(string[] args)
         {
             Console.WriteLine("Greetings, this is the beginning of an very barebone game, enjoy");
-            Console.WriteLine("First you have to choose a class, either mage or fighter, they both have different cons and pros");
-            Console.WriteLine("Fighter do less damage but are sturdier while mages do more damage and are floppier");
-            Console.WriteLine("So which one will you go with?");
+            Console.WriteLine("You will be allowed to name your character and can perform three actions");
+            Console.WriteLine("Either you rest which restores health - fight normal enemies - or fight the boss which is tougher");
 
-            string[] items = { "Mage", "Hero" }; 
-            int selected = 0;  
-            while (true) 
-            {
+           
 
-                for (int i = 0; i < items.Length; i++) 
-                {
-                    if (i == selected) Console.Write(">");   
-                    else Console.Write(" ");
-                    Console.WriteLine(items[i]);
-                }
-
-
-                ConsoleKeyInfo key = Console.ReadKey();
-                if (key.Key == ConsoleKey.UpArrow) selected--;
-                if (key.Key == ConsoleKey.DownArrow) selected++;
-                if (key.Key == ConsoleKey.Enter) break;
-
-                Console.Clear();
-                if (selected > items.Length - 1)   
-                {
-                    selected = items.Length - 1;
-                }
-
-                if (selected < 0)
-                {
-                    selected = 0;
-                }
-
-            }
-
-            Console.WriteLine("Good job you clicked a button");
-
-            Console.WriteLine("I will now display your stats - you will no be able to ");
-
+            
 
             string[] items2 = { "Fight", "Rest", "Fight the boss" };
             int selected2 = 0;
@@ -65,8 +32,8 @@ namespace Slutprojekt_2020
 
 
                 ConsoleKeyInfo key = Console.ReadKey();
-                if (key.Key == ConsoleKey.UpArrow) selected--;
-                if (key.Key == ConsoleKey.DownArrow) selected++;
+                if (key.Key == ConsoleKey.UpArrow) selected2--;
+                if (key.Key == ConsoleKey.DownArrow) selected2++;
                 if (key.Key == ConsoleKey.Enter) break;
 
                 Console.Clear();
@@ -75,9 +42,9 @@ namespace Slutprojekt_2020
                     selected2 = items2.Length - 1;
                 }
 
-                if (selected < 0)
+                if (selected2 < 0)
                 {
-                    selected = 0;
+                    selected2 = 0;
                 }
 
             }

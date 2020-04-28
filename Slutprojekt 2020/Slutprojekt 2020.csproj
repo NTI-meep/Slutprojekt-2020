@@ -44,11 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Antagonist.cs" />
-    <Compile Include="Hero.cs" />
-    <Compile Include="Mage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Protagonists.cs" />
     <Compile Include="Qwib-Qwib.cs" />
     <Compile Include="vas iktomi.cs" />
   </ItemGroup>
